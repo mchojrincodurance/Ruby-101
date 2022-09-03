@@ -5,7 +5,7 @@ class FizzBuzz
       return "Fizz"
     end
 
-    if int == 5 then
+    if int % 5 == 0 then
     
       return "Buzz"
     end
