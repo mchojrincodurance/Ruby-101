@@ -5,6 +5,11 @@ class FizzBuzz
       return "Fizz"
     end
 
+    if int == 5 then
+    
+      return "Buzz"
+    end
+
     return int.to_s
   end
 end
