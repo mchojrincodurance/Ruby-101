@@ -15,6 +15,10 @@ GEM
     power_assert (2.0.1)
     test-unit (3.5.3)
       power_assert
+    test-unit-runner-junitxml (0.1.2)
+      test-unit
+    test-unit-runner-tap (1.1.2)
+      test-unit
     thread_safe (0.3.6)
     tzinfo (1.2.10)
       thread_safe (~> 0.1)
@@ -25,6 +29,8 @@ PLATFORMS
 DEPENDENCIES
   param_test (~> 0.2.0)
   test-unit (~> 3.5)
+  test-unit-runner-junitxml (~> 0.1.1)
+  test-unit-runner-tap (~> 1.1)
 
 BUNDLED WITH
    2.2.28

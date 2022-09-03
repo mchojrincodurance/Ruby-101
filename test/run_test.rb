@@ -5,6 +5,7 @@ test_dir = File.join(base_dir, "test")
 $LOAD_PATH.unshift(lib_dir)
 
 require 'test/unit'
+require 'test/unit/runner/tap'
+require "test/unit/runner/junitxml"
 
-$stdout.write "Running tests from " + test_dir
 exit Test::Unit::AutoRunner.run(true, test_dir)
