@@ -1,6 +1,6 @@
 class FizzBuzz
   def convert(int)
-    if int == 3 then
+    if int % 3 == 0 then
 
       return "Fizz"
     end
