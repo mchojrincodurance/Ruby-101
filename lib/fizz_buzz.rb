@@ -1,5 +1,5 @@
 class FizzBuzz
   def convert(int)
-    return "1"
+    return int.to_s
   end
 end
