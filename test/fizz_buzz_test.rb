@@ -10,4 +10,5 @@ assert_equal "2", fizz_buzz.convert(2)
 assert_equal "Fizz", fizz_buzz.convert(3)
 assert_equal "Buzz", fizz_buzz.convert(5)
 assert_equal "Fizz", fizz_buzz.convert(6)
+assert_equal "Buzz", fizz_buzz.convert(10)
 
