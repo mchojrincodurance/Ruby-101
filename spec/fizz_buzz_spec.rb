@@ -9,7 +9,7 @@ describe FizzBuzz do
       [1, "1"], 
       [2, "2"],
       [15, "FizzBuzz"],
-      [20, "20"] 
+      [22, "22"] 
     ].each do |num, str|
       it "should return '#{str}' when converting #{num}" do  
         expect(FizzBuzz.convert(num)).to eq(str)
