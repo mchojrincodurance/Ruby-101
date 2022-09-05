@@ -1,8 +1,8 @@
 require "test/unit"
 require_relative '../lib/fizz_buzz.rb'
+require 'param_test'
 
-class FizzBuzzTest < Test::Unit::TestCase
-
+class FizzBuzzTest < ActiveSupport::TestCase
   def setup
     @fizz_buzz = FizzBuzz.new
   end
@@ -11,7 +11,8 @@ class FizzBuzzTest < Test::Unit::TestCase
     assert_kind_of FizzBuzz, @fizz_buzz, "fizz_buzz should be an instance of FizzBuzz"
   end
 
-  def test_should_convert_non_special_numbers
-    assert_equal "1", @fizz_buzz.convert(1)
-  end
+  param_test "%d is converted into %s", 
+    [ ["1", 1], ["2", 2] ] do |converted, original|
+      assert_equal converted, @fizz_buzz.convert(original)
+    end
 end
