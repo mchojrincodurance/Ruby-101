@@ -1,5 +1,5 @@
 # Ruby-101
-An implementation of the FizzBuzz kata using the Ruby programming language and RSpec
+An implementation of the FizzBuzz kata using the Ruby programming language and [RSpec](https://rspec.info/)
 
 To get it up and running you need:
 
